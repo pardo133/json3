@@ -1,12 +1,10 @@
 
 
-  const operacion: {
-    "valorA": 0,
-    "valorB": 0,
-    "tipo": "suma",
-    "total": 0
-
-  }
 
 
-
+const operacion = {
+    valorA: 0,
+    valorB: 0,
+    tipo: "",
+    total: 0
+};
