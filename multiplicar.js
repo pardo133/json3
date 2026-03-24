@@ -1,3 +1,4 @@
+
 const btnMulti = document.getElementById("btn-multi");
 
 btnMulti.onclick = () => {
