@@ -1,5 +1,5 @@
-const boton=document.getElementById ("btn-sumar"),
-botonSumar.onclick = () => {
+const boton=document.getElementById ("btn-sumar")
+boton.onclick = () => {
   operacion.valorA = Number(document.getElementById("num1").value);
   operacion.valorB = Number(document.getElementById("num2").value);
 };
