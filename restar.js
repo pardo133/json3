@@ -1,25 +1,21 @@
 
-const inputA = document.getElementById("valor-a");
-const inputB = document.getElementById("valor-b");
-const btnRestar = document.getElementById("btn-restar");
-const resultadoTexto = document.getElementById("resultado");
 
+const btnRestar = document.getElementById("btn-restar");
 
 btnRestar.onclick = () => {
     
-    const a = Number(inputA.value);
-    const b = Number(inputB.value);
+    const n1 = Number(document.getElementById("num1").value);
+    const n2 = Number(document.getElementById("num2").value);
 
     
-    operacion.valorA = a;
-    operacion.valorB = b;
+    operacion.valorA = n1;
+    operacion.valorB = n2;
     operacion.tipo = "resta";
-    operacion.total = a - b;
+    operacion.total = n1 - n2;
 
-   
-    resultadoTexto.textContent = `Resultado: ${operacion.total}`;
+    
+    document.getElementById("resultado").textContent = `Resultado: ${operacion.total}`;
 
+    
     historial.push({ ...operacion });
-
-    console.log("Operación de resta registrada en el historial:", operacion);
 };
